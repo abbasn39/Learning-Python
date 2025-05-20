@@ -19,7 +19,3 @@ print("More dings")
 """I think the other branch is removed now"""
 
 #I have made this edit on my Laptop just to check th sync between my PCs
-
-#Change made
-#Another Change made on Laptop
-#Checking Git Desktop
