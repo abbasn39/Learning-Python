@@ -11,7 +11,5 @@ print("He said \"Call me later\"")
 print("What does the fox say?")
 print("Ding Ding Ding Ding Ding Ding Ding")
 
-print("Ding Ding")
-# Added a few more dings because I'm checking how GitHub works
 
 """More Edits"""
