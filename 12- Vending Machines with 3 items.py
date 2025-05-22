@@ -26,7 +26,6 @@ elif TypeofProduct=="Chocolates":
             break
         print("Chocolates")
         i = i + 1
-    print("Thank you")
 
 elif TypeofProduct=="Crisps":
     NumCrisps = int(input("How many crisps do you want?"))

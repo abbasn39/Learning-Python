@@ -18,3 +18,5 @@ while i<=NumberOfCandies:
     i=i+1
 print("Thank you for shopping here")
 
+
+
