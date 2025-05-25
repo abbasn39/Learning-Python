@@ -54,3 +54,9 @@ else:
                     # <=    (Less than or Equal to)
 
                     # You can also use 'and' between the above conditions like 18>=Age and Age<=30   Range from 18-30
+
+
+# SHORTHAND IF ELSE STATEMENTS
+XX=int(input("Enter Number 1\n"))
+YY=int(input("Enter Number 2\n"))
+print("Number 1 is greater than Number 2") if XX>YY else print("Number 2 is less than Number 1")
