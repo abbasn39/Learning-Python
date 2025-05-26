@@ -38,3 +38,24 @@ List=[1,2,3,4,5,6,7,8,9,10,11,22,33]        #Writing an asterisk * before a list
 print(*List)                                # unpacked and passed to the function one after another
                                             # By default puts a space between indices
 
+
+print("\nMulti Line Strings\n")
+
+
+print("""This           
+is
+a
+multi
+line
+string""")
+#Triple quotes indicate that this is a multi line string
+
+print("This"
+      " is"
+      " not"
+      " a"
+      " multi"
+      " line"
+      " string")
+# When double quotes are used when you move to the next line it automatically adds quotes when switching lines but
+# does move the print to multi line format.
