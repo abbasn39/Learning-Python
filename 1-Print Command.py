@@ -48,7 +48,7 @@ a
 multi
 line
 string""")
-#Triple quotes indicate that this is a multi line string
+#Triple quotes """ and ''' indicate that this is a multi line string
 
 print("This"
       " is"
