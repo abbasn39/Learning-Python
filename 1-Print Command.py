@@ -16,6 +16,25 @@ print("Ding Ding")
 
 print("More dings")
 
-"""I think the other branch is removed now"""
+print("\nSeparators and End Arguments\n")
 
-#I have made this edit on my Laptop just to check th sync between my PCs
+print("Abbas","Mahad",sep=" and ")          #Sep arguments cannot take a number input
+print("Abbas","Mahad",sep="\t&\t")          #Sep arguments can also include escape functions
+print("Abbas","Mahad",sep="+")              #Sep arguments are string sensitive (spaces etc need to be provided in string)
+print("Abbas","Mahad",sep="")               # No space separators
+
+a=1
+b=2
+c=3
+print(a,b,c,sep='--->')
+
+print("\nEnd Arguments\n")
+
+print("Jack and", end=' the ')              #end tells the program to end the print with the end argument string
+print('Bean', end='stalk')
+
+print("\nUse of Asterisk\n")
+List=[1,2,3,4,5,6,7,8,9,10,11,22,33]        #Writing an asterisk * before a list means that its elements will be
+print(*List)                                # unpacked and passed to the function one after another
+                                            # By default puts a space between indices
+
