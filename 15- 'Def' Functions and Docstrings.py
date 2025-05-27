@@ -10,8 +10,8 @@ func_1(2,4)
 print("\nProgram 2\n")
 def Happy_Birthday(Name,age):
 #The position of the variables in the function are order sensitive
-    print(f"Happy Birthday to {Name}")
-    print(f"You turned {age} years old today")
+    print(f"Happy Birthday to {Name}")                      #Program in just printing no return is required as the value
+    print(f"You turned {age} years old today")              # is not stored anywhere
 
 
 Happy_Birthday("Abbas",30)
@@ -19,7 +19,7 @@ Happy_Birthday("Mahad",24)
 
 print("\nProgram 3\n")
 def add_numbers(x,y):
-    z=x+y
+    z=x+y                                       #When you need to reuse the result then use 'return' in def block.
     return z
 
 def subtract_numbers(x,y):
