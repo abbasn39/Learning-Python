@@ -3,6 +3,7 @@
 #           'r'	            Read (default) – file must exist
 #               'rb'        Read in binary format
 #               'rt'        Read in text format (Default mode, same as 'r')
+#               'r+'        opens in read + write mode
 #           'w'	            Write – creates a new file or overwrites existing
 #           'a'	            Append – adds to the end of file
 #           'x'	            Create – fails if file exists
