@@ -57,4 +57,4 @@ a.close()
 print("\nREADLINES\n")
 a=open("FileIO.txt")
 print(a.readlines())                        #Prints all the lines as a list, notice the \n characters in the list.
-a.close()
+a.close()                                   # readlines() also takes the pointer to the end.
