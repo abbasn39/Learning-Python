@@ -1,10 +1,11 @@
 
-m=23                                # This is a global Variable
-k=56
-def Func1(x):
-    m=3
-    k=12
+m=23                                # Global Variable
+k=56                                # Global Variable
+def func1(x):
+    m=3                             # Local Variable
+    k=12                            # Local Variable
     print(m,k)
+    print("x=",x,"is the argument in this function")
 
 
-Func1(2)
+func1(2)
