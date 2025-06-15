@@ -7,6 +7,11 @@ def func_1(First_Number, Second_Number):
 func_1(1,2)
 func_1(2,4)
 
+
+#When we define a function using 'def' we enter the name of function and within bracket the argument that function
+# will take. For example:
+# def Func_A(x,y) here the name is Func_A and the argument it takes will be 'x' and 'y'
+
 print("\nProgram 2\n")
 def Happy_Birthday(Name,age):
 #The position of the variables in the function are order sensitive
