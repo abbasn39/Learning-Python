@@ -22,7 +22,9 @@ def func1(x):
     print(f"x={x} where x is the argument in this function")
 
 func1(2)
-# print(p)                          # This will show an error if run because this is from a function's local scope                                  # and can't be printed in a global scope.
+# print(p)                          # This will show an error if run because this is from a function's local scope
+                                    # and can't be printed in a global scope.
+
 print("\n\n")
 
 
