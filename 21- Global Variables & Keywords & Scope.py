@@ -33,7 +33,7 @@ def func2():
     def func3():
         global e
         e=25
-    print("before calling func3",e)     #This will print 20
+    print("before calling func3",e)     #This will print  20
     func3()
     print("after calling func3",e)      # This will also print 20 even after calling func3 because the value of 'e'
                                         # does not go 1 step above in the nested function rather it goes outside
