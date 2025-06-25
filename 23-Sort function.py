@@ -24,3 +24,18 @@ print(sorted_Num)                       # Prints sorted list
 print(Num)                              # The original list remain unmodified
 # If you do not want to change the original list and store the sorted list into a new variable we use 'sorted function'
 # Notice the syntax is not same as 'sort' ie "Num.sort()" instead it is "Variable= sorted(Num)"
+
+print("\nCustom key Sorting")
+#When you need to sort using a custom condition you can use 'key='
+print("\nlength sorting")
+fruits=['apple','Mango','Tomato','kiwi','banana','pineapple','watermelon']
+fruits.sort(key=len)
+print(fruits)
+#sorts the list according to a custom key, according to the length of the string.
+
+print("\nString's last index alphabetical sorting")
+fruits=['apple','Mango','Tomato','kiwi','banana','pineapple','watermelon']
+fruits.sort(key=lambda fruit: fruit[-1])
+print(fruits)
+#sorts the list accoriding to a custom key( alphbatical order of the string's last index in each of the list's element.
+
