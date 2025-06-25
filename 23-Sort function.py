@@ -34,8 +34,8 @@ print(fruits)
 #sorts the list according to a custom key, according to the length of the string.
 
 print("\nString's last index alphabetical sorting")
-fruits=['apple','Mango','Tomato','kiwi','banana','pineapple','watermelon']
+fruits=['apple','Mango','Tomato','kiwi','banana','pineapple','watermelon','grapefruit']
 fruits.sort(key=lambda fruit: fruit[-1])
 print(fruits)
-#sorts the list accoriding to a custom key( alphbatical order of the string's last index in each of the list's element.
+#sorts the list according to a custom key( alphabetical order of the string's last index in each of the list's element.
 
