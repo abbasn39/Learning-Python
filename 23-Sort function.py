@@ -39,3 +39,18 @@ fruits.sort(key=lambda fruit: fruit[-1])
 print(fruits)
 #sorts the list according to a custom key (alphabetical order of the string's last index in each of the list's element).
 
+def x(a):
+    return a[0]
+def y(a):
+    return a[1]
+def z(a):
+    return a[2]
+a=[[1, 9, 30], [5, 3, 15],[2, 8, 10],[7, 6, 25],[4, 2, 20]]
+a.sort(key=x)
+print(a)
+a.sort(key=y)
+print(a)
+a.sort(key=z)
+print(a)
+
+#Sorting Lists within List according to index number of the inside lists.
