@@ -60,6 +60,7 @@ print(evens)
 
 from functools import reduce
 
-nums = [1, 2, 3, 4]
-product = reduce(lambda x, y: x * y, nums)
-print(product)  # Output: 24 (1*2*3*4)
+nums = [1, 2, 3, 4, 5]
+Summation = reduce(lambda x, y: x + y, nums)
+print(Summation)
+# Hint: Can be used for Factorial calculation
