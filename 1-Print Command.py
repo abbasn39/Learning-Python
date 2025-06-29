@@ -2,12 +2,14 @@
 Please ignore this
 I'm just checking something"""
 
-#This is also a comment but written using a different syntax
+#This is also a comment but written using a different way
 
 print("Hello World","Whats going on?",end=" ",)
+#If end="" is added then print statement will end with what's between "" rather than switching to default(end="\n")
 print("Are you doing okay?")
 print("Yes I'm fine")
 print("He said \"Call me later\"")
+# Use \ if you want to use syntax sensitive strings
 print("What does the fox say?")
 print("Ding Ding Ding Ding Ding Ding Ding")
 
@@ -19,6 +21,7 @@ print("More dings")
 print("\nSeparators and End Arguments\n")
 
 print("Abbas","Mahad",sep=" and ")          #Sep arguments cannot take a number input
+print("Abbas","Mahad")
 print("Abbas","Mahad",sep="\t&\t")          #Sep arguments can also include escape functions
 print("Abbas","Mahad",sep="+")              #Sep arguments are string sensitive (spaces etc need to be provided in string)
 print("Abbas","Mahad",sep="")               # No space separators
