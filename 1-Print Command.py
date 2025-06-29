@@ -21,7 +21,7 @@ print("More dings")
 print("\nSeparators and End Arguments\n")
 
 print("Abbas","Mahad",sep=" and ")          #Sep arguments cannot take a number input
-print(Abbas,Mahad)
+print("Abbas","Mahad")
 print("Abbas","Mahad",sep="\t&\t")          #Sep arguments can also include escape functions
 print("Abbas","Mahad",sep="+")              #Sep arguments are string sensitive (spaces etc need to be provided in string)
 print("Abbas","Mahad",sep="")               # No space separators
