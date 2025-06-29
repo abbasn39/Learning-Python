@@ -63,4 +63,4 @@ from functools import reduce
 nums = [1, 2, 3, 4, 5]
 Summation = reduce(lambda x, y: x + y, nums)
 print(Summation)
-# Hint: Can be used for Factorial calculation
+# Hint: Can be used for Factorial calculations
