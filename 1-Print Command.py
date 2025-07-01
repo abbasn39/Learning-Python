@@ -37,11 +37,13 @@ print("Jack and", end=' the ')              #end tells the program to end the pr
 print('Bean', end='stalk')
 
 print("\nUse of Asterisk\n")
-List=[1,2,3,4,5,6,7,8,9,10,11,22,33]        #Writing an asterisk * before a list means that its elements will be
-print(*List)                                # unpacked and passed to the function one after another
-                                            # By default puts a space between indices
-
-
+print("with *")
+List_with_Asterisk=[1,2,3,4,5,6,7,8,9,10,11,22,33]        #Writing an asterisk * before a list means that its elements will be
+print(*List_with_Asterisk)                                # unpacked and passed to the function one after another
+                                            # By default, it puts a space between indices
+print("without *")
+List_without_Asterisk=[1,2,3,4,5,6,7,8,9,10,11,22,33]        #Writing an asterisk * before a list means that its elements will be
+print(List_without_Asterisk)
 print("\nMulti Line Strings\n")
 
 
@@ -60,5 +62,5 @@ print("This"
       " multi"
       " line"
       " string")
-# When double quotes are used when you move to the next line it automatically adds quotes when switching lines but
-# does move the print to multi line format.
+# When double quotes are used you move to the next line it automatically adds quotes when switching lines but
+# does not turn the print in to a multi line format.

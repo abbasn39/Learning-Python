@@ -1,9 +1,8 @@
 Var1=24
 Var2="Hello"
-Var3="How you doin?"
+Var3="How you doing?"
 Var4= 22.5
 # Type function will print the type of Variable
-print("\n\n")
 print(type(Var1))
 print(type(Var2))
 print(type(Var3))
@@ -17,7 +16,7 @@ print(Var1 -Var4)
 print(Var4 - Var1)
 
 """
-These are all fucntions.
+These are all functions.
 int()
 float()
 str()
@@ -26,12 +25,12 @@ str()
 Var5="5"
 Var6="25"
 
-print(Var5 + Var6)                  #This will give 525 as output
-print(int(Var5) + int(Var6))        #This will give 30 as output because string is converted to intege
+print(Var5 + Var6)                  #This will give 525 as output(adding strings)
+print(int(Var5) + int(Var6))        #This will give 30 as output because string is converted to integer
 
 
 print(5*"Hello\n")                  #Prints Hello 5 times on different lines
-print(13* str(int(Var5) + int(Var6)) )
+print(3* str(int(Var5) + int(Var6)) )
 
     # HOW TO INTERCHANGE VALUES OF VARIABLES
 a=5

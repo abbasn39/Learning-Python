@@ -1,17 +1,17 @@
-Datatype1=int("5")
-print(type(Datatype1),"\t\t",Datatype1)                     #Datatype integer
+a=1
+print(type(a),"\t\t",a)                     #Datatype integer
 
-Datatype2=float("3.14")
-print(type(Datatype2),"\t",Datatype2)                       #Datatype float
-
-
-Datatype3=str(42)
-print(type(Datatype3),"\t\t",Datatype3)                     #Datatype string
+b=3.14
+print(type(b),"\t",b)                       #Datatype float
 
 
-Datatype4=bool(0)
-print(type(Datatype4),"\t\t",Datatype4)                     # Boolean '1' is true '0' is false
+c="Abbas"
+print(type(c),"\t\t",c)                     #Datatype string
 
-Datatype5=list("abc")
-print(type(Datatype5),"\t\t",Datatype5)                     #Datatype List, Stores multiple items in a Variable.
+
+d=True
+print(type(d),"\t\t",d)                     # Boolean '1' is true '0' is false
+
+e=[1,2,3,4]
+print(type(e),"\t\t",e)                     #Datatype List, Stores multiple items in a Variable.
 
