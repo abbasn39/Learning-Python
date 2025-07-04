@@ -10,7 +10,7 @@ time=datetime.time(13,45)                   #gives us the time passed in the arg
 print("Time given in Arguments----->",time,"\n")
 
 now=datetime.datetime.now()                             #gives us the current time and date
-print("Current time----->",now,"\n")
+print("Current date & time----->",now,"\n")
 
 # We can also change the format of how the time and date are shown
 
@@ -67,4 +67,37 @@ if current_time > target_time:
     print("Current time is after target time")
 else:
     print("Current time is before target time")
+
+
+from datetime import date
+d=date(2025,3,4)
+print(d)
+print(d.year)
+print(d.month)
+print(d.day)
+
+today_date=date.today()
+print(today_date)
+
+from datetime import time
+
+t=time(13,45,59)
+print(t)
+print(t.hour)
+print(t.minute)
+print(t.second)
+
+from datetime import datetime
+t_now=datetime.now().time()
+print(t_now)
+
+
+from datetime import timedelta,date
+
+Date_today=date.today()
+delta=timedelta(days=30)
+days_addition=Date_today + delta
+print(days_addition)
+days_subtraction=Date_today - delta
+print(days_subtraction)
 
