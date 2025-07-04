@@ -22,3 +22,4 @@ random.shuffle(cards)                              # Shuffles elements in a non-
                                                    # Does not require a variable assigned
 print(cards)
 
+
