@@ -17,6 +17,8 @@ rps_game=["rock","paper","scissors"]
 choice=random.choice(rps_game)                     # Choice allows to choose random element in a non-empty sequence
 print(choice)
 
+
+
 cards=["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
 random.shuffle(cards)                              # Shuffles elements in a non-empty sequence
                                                    # Does not require a variable assigned
