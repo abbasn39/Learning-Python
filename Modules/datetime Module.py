@@ -95,9 +95,15 @@ print(t_now)
 from datetime import timedelta,date
 
 Date_today=date.today()
-delta=timedelta(days=30)
-days_addition=Date_today + delta
+delta_days=timedelta(days=30)
+days_addition=Date_today + delta_days
 print(days_addition)
-days_subtraction=Date_today - delta
+days_subtraction=Date_today - delta_days
 print(days_subtraction)
 
+time_now=datetime.now()
+delta_minutes=timedelta(minutes=30)
+print(time_now + delta_minutes)
+
+
+# days,seconds,microseconds,milliseconds,minutes,hours,weeks   can be used in arguments of timedelta
