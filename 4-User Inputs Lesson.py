@@ -1,13 +1,13 @@
 print("Program 1")
 print("Enter your number please")
-inputNUM=input()            #This will be stored as a String
-print("You Entered",inputNUM) # This will print the number as a string
+inputNUM=input()                            #This will be stored as a String
+print("You Entered",inputNUM)               # This will print the number as a string
 
-#int() will treat the Variable above as an integer and now operators can be used with it.
+#int() will typecast the Variable above into an integer and now operators can be used with it.
 print("Multiplied by 10 the answer is:\n",int(inputNUM) * 10)
 # In Program 1, line 3 takes an input which is a string by default
 #In order to use it as an integer we need to convert it using int()
-# In line 7 to use multiplication we cconvert inputNUM which is a string to an integer using int(inputNUM) [Typecasting]
+# In line 7 to use multiplication we convert inputNUM which is a string to an integer using int(inputNUM) [Typecasting]
 
 print("Program 2")
 A=input("Please enter your input\n")

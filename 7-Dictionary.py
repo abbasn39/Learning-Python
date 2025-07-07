@@ -20,7 +20,7 @@ Siblings={"Tahir":{"Sumiyah","Waleed","Sufiyan","Khadija"},
           "Uzma":{"Mahad","Aden","Jannat"},
        "Talat":{"Eman","Fatima","Bazil"},
           "Sumaira":{"Rafay","Meerub","Musa"},
-          "Farwa":{"Aleezay","Anaya"}}      #
+          "Farwa":{"Aleezay","Anaya"}}
 
 print(Siblings["Uzma"])
 print(Siblings["Humaira"])

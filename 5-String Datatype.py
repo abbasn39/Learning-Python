@@ -1,18 +1,18 @@
-
 Str1="Abbas is a boy"
+
 print("Print 1")
-print(Str1[0])              #The letter 'A' is at [0] index position
+print(Str1[0])                  #The letter 'A' is at [0] index position
 
 print("Print 2")
-print(Str1[0:4])            #This print 'Abba' only because when defining a range in
-                            #index the last number ie '4' in not inclusive
+print(Str1[0:4])                #This print 'Abba' only because when defining a range in
+                                #index the last number ie '4' in not inclusive
 print("Print 3")
-print(Str1[0:5])            #This prints 'Abbas' because when we enter [0:5] it
-                            #includes the last letter of 'Abbas' because '5' makes the
-                            # 's' inclusive in the string range
+print(Str1[0:5])                #This prints 'Abbas' because when we enter [0:5] it
+                                #includes the last letter of 'Abbas' because '5' makes the
+                                # 's' inclusive in the string range [index 4 is included]
 print("Print 4")
-print(len(Str1))            #This prints 14 but according to index length is 13.
-                            #'len' counts index '0' and starts from 1.
+print(len(Str1))                #This prints 14 but according indexing the last index is number 13.
+                                #'len' is different from indexing and starts counting from 1.(index 0 is counted as 1)
 
 # A b b a s   i s   a    b  o  y           #String
 # 0 1 2 3 4 5 6 7 8 9 10 11 12 13          # Respective indices for each letter and the spaces between words
@@ -30,7 +30,7 @@ print("Print 8")
 print(Str1[:5])                           # Prints everything before string index 5 excluding index 5
 
 print("Print 9")
-print(Str1[0:5:2])                        # This skips one index. prints alternate indices inclusive of index 0
+print(Str1[0:5:2])                        # This skips one index. prints every 2nd index
 
 print("Print 10")
 print(Str1[0:14:3])                       #Prints index 0 and then every third index till index 14
@@ -48,7 +48,8 @@ print("Print 14")
 print(Str1[-14:len(Str1)])                #Prints the whole string but we use len(Str1) as the upper limit in the range
                                           # len(Str1) defines the whole length of the string
                                           # You can also write the value of len(Str1) in the range to get same output
-    #" print(Str1[-14:len(Str1)]) " is equal to " print(Str1[0:14]) " is equal to print(Str1[-14:])
+                                          #" print(Str1[-14:len(Str1)]) " is equal to " print(Str1[0:14]) " is equal to
+                                          # print(Str1[-14:])
 
 print("Print 15")
 print(Str1[::-1])                         #Prints every string index starting from the end
@@ -61,10 +62,15 @@ print("Print 17")
 print(Str1.isupper())                   #Checks if the string is in Upper Case
 print(Str1.islower())                   #Checks if the string is in Lower Case
 print(Str1.isdigit())                   #Checks if the string is in Digits (Only checks for 0-9 digits)
-print(Str1.isalpha())                   #Checks if the string is in alphabetical
+print(Str1.isalpha())                   #Checks if the string is in alphabetical(spaces are not alphabetical)
 print(Str1.isalnum())                   #Checks if the string is in AlphaNumeric
 print(Str1.isspace())                   #Checks if the string is all spaces
 print(Str1.isnumeric())                 #Checks if the string is in numbers(checks Unicode mathematical characters too)
+#isnumeric() returns True for : 0-9 digits, super and subscripts, fraction symbols, full width digits,
+# roman numerals(only special characters not V,M,I,C etc), chinese/japanese/Korean digits,
+# unicode numerals in other languages
+
+#isnumeric() returns false for : floats,negative numbers, alphabetical numbers(one,two,three), periods
 
 print("Print 18")
 print(Str1.endswith("boy"))             #True
