@@ -2,22 +2,34 @@ print("Section 1\n")
 s=set()                         # If we do not write 'set' after = then s will be an empty tuple
 print(type(s))
 
+s1={1,2,3,4,5,6,7,8,9,10}       # Initializing set by itself
+print(s1,"  ",type(s1))
+
+L=["a","b","c","d","e"]
+s2=set(L)                       # Initializing a set through List
+print(s2,"  ",type(s2))
+
+T=(1,2,3,4,5)
+s3=set(T)                       # Initializing a set through Tuple
+print(s3,"  ",type(s3))
+
 print("\nSection 2\n")
 List1=[1,2,3,4]
-Set1=set(List1)                 #Stroring a list in  the set
+Set1=set(List1)                 #Converting a list in  the set
 
 print(Set1)
 print(type(Set1))
 
 print("\nSection 3\n")
+
 Tuple1=("a","b","c","d")
-Set2=set(Tuple1)                #This can store a tuple in it but at random indexing
+Set2=set(Tuple1)                #This can convert a tuple in it but at random indexing
 
 print(Set2)
 print(type(Set2))
 
 print("\nSection 4\n")
-Set3=set()
+Set3=set()                      #Empty Set
 Set3.add(1)
 Set3.add(2)
 print(Set3)
@@ -35,9 +47,9 @@ print(Set4)
 print("\nSection 5\n")
 Set5={11,22,55}
 Set6={33,44,55}
-Set7=Set5.union(Set6)
-Set8=Set5.intersection(Set6)    #You need to define a separate set for functions like union and intersection
+Set7=Set5.union(Set6)           # Notice no repeat values
 print(Set7)
+Set8=Set5.intersection(Set6)    #You need to define a separate set for functions like union and intersection
 print(Set8)
 
 print("\nSection 6")
@@ -66,10 +78,10 @@ a = {1, 2, 3}
 b = {3, 4, 5}
 c = {6, 7, 8}
 
-print(a.union(b))                   # {1, 2, 3, 4, 5}             Total Elements single occurrence of each
-print(a.intersection(b))            # {3}                         Intersection of both
-print(a.difference(b))              # {1, 2}                      a - b (Remainder of a printed)
-print(b.difference(a))              # {4, 5}                      b - a (Remainder of b printed)
+print(a.union(b))                   # {1, 2, 3, 4, 5}             Total Elements, no repetition.
+print(a.intersection(b))            # {3}                         Intersection of both.
+print(a.difference(b))              # {1, 2}                      a - b (Remainder of set 'a' printed)
+print(b.difference(a))              # {4, 5}                      b - a (Remainder of set 'b' printed)
 print(a.symmetric_difference(b))    # {1, 2, 4, 5}                (a U b) - (a ∩ b)
 
                             # a | b    union
@@ -98,7 +110,8 @@ print(e.issuperset(d))      # True
 # a = {1, 2, 3}
 # b = {3, 4, 5}
 # c = {6, 7, 8}
+
 print("\nDisjoint tests\n")            # Disjoint sets: Two different sets in which no two elements are same.
-print(a.isdisjoint(b))      #False (3 is present in both)
-print(a.isdisjoint(c))      #True (no two elements of set 'a' and 'c' are same)
+print(a.isdisjoint(b))                 #False (3 is present in both)
+print(a.isdisjoint(c))                 #True (no two elements of set 'a' and 'c' are same)
 
