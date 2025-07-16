@@ -68,6 +68,8 @@ print(Dict7.get("Samsung")) #Will check if key 'samsung' exists, if yes only the
 print(Dict7.get("Haier"))   #Will check if key 'Haier' exists, if yes only then it will return its Value.
                             # if the key 'Haier' does not exist it will give 'None' instead of error
 
+print(Dict7.get("Haier","Not found in the dictionary"))     # Custom messages for absent keys
+
     #Other functions for dictionary
 Dict7.update({"TCL":"Cheap"})       #Same as ----->  Dict7["TCl"]="Cheap" but using update is better.
 print(Dict7)
@@ -80,3 +82,7 @@ print(Dict7)
 Dict7.clear()                       # Clears everything from the dictionary
 print(Dict7)
 
+print("\nSection 6")
+
+Dict8={"A":"1","B":"2","C":"3"}
+print(Dict8["B"])                   # Prints the value corresponding to the key in [] parenthesis.
