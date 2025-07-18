@@ -59,4 +59,4 @@ else:
 # SHORTHAND IF ELSE STATEMENTS
 XX=int(input("Enter Number 1\n"))
 YY=int(input("Enter Number 2\n"))
-print("Number 1 is greater than Number 2") if XX>YY else print("Number 2 is less than Number 1")
+print("Number 1 is greater than Number 2") if XX>YY else print("Number 2 is greater than Number 1")
