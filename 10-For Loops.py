@@ -51,3 +51,21 @@ for Name,Marks in List5:
     else:
         print(Name,"has failed the exam")
 
+print("\nSection 7\n")
+
+list1=[[1,2],[3,4],[5,6]]
+
+for x in list1[0:3]:        # Range of list defined in []
+    for a in x:
+        break
+    print(a)
+print("\n")
+for x in list1[0:2]:        # Range of list defined in []
+    for b in x:
+        break
+    print(b)
+print("\n")
+for x in list1[0:1]:        # Range of list defined in []
+    for c in x:
+        break
+    print(c)
