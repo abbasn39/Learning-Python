@@ -55,17 +55,17 @@ print("\nSection 7\n")
 
 list1=[[1,2],[3,4],[5,6]]
 
-for x in list1[0:3]:        # Range of list defined in []
+for x in list1[0:3]:        # Range of list defined in [], index 0 till 2 inclusive
     for a in x:
         break
     print(a)
 print("\n")
-for x in list1[0:2]:        # Range of list defined in []
+for x in list1[0:2]:        # Range of list defined in [], index 0 till 1 inclusive
     for b in x:
         break
     print(b)
 print("\n")
-for x in list1[0:1]:        # Range of list defined in []
+for x in list1[0:1]:        # Range of list defined in [], only index 0
     for c in x:
         break
     print(c)
