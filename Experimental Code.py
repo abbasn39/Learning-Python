@@ -1,30 +1,13 @@
-# Set_F = {1, 2, 3}
-# l=[[2,3],[4,5],[6,7]]
-#
-# # print(l[0])
-# # for x in l[0]:
-# #     for a in x:
-# #         print (a)
-#
-# # print(l[0][0])
-# # for x in l[0:1]:
-# #     for a in x:
-# #         print(a)
-# #         break
+def cash(x):
+    global balance
+    cash_in=int(input("please insert cash:\t\t"))
+    x=cash_in
+    balance =balance + cash_in
+    return cash_in
 
-Dict1={"A":1,"B":2,"C":3}
-Dict2={"A":2,"B":3,"C":4}
-for item,x in Dict1.items():            #Dict1.items() returns key-value pairs as tuples
-    a = x
-    break
-print("a",a)
+balance=0
 
-for item,x in Dict2.items():            #Dict1.items() returns key-value pairs as tuples
-    b = x
-    break
-print("b",b)
-
-if a > b:
-    print(a)
-else:
-    print(b)
+cash(25)
+print("asddf  ",balance)
+cash(25)
+print("new  ",balance)
