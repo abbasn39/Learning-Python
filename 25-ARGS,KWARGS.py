@@ -1,4 +1,4 @@
-print("simple function define")
+print("simple define function")
 
 def add(x,y):
     return x+y
@@ -43,14 +43,14 @@ def print_address_key_value(**kwargs):
 
 print_address_key_value(house="142",block="A",street="33",town="Model Town",city="Gujranwala")
 
-print("\n")
+print("*args and **kwargs function\n")
 
 def name_address(*args, **kwargs):
     for arg in args:
         print(arg, end=" ")
     print()
 
-    if ("street" in kwargs):
+    if "street" in kwargs:
         print(f"{kwargs.get('house')} {kwargs.get('street')}")
         print(f"{kwargs.get('block')} {kwargs.get('town')}")
         print(f"{kwargs.get('city')}")
@@ -78,3 +78,18 @@ name_address("Mr","Muhammad","Abbas",
              street="33",
              town="Model Town",
              city="Gujranwala")
+
+
+print()
+y= "The number is:\t"
+w= "The letter"
+def combo(r,*args,**kwargs):           #normal arguments have to be always before the args.
+
+    for x in args:
+        print(r,x)
+    for i,j in kwargs.items():
+        print(w,i," corresponds to ",j)
+
+list1= [1,2,3,4,5]
+list2= {"A":"1","B":"2"}
+combo(y,*list1,**list2)
