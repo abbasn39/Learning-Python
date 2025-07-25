@@ -86,3 +86,41 @@ print("\nSection 6")
 
 Dict8={"A":"1","B":"2","C":"3"}
 print(Dict8["B"])                   # Prints the value corresponding to the key in [] parenthesis.
+
+print("\nSection 7")
+
+# Dictionary Comprehension
+
+#Dictionary comprehension is a concise and readable way to create dictionaries in Python using
+# a single line of code, similar to list comprehensions.
+
+#Dictionry={key_expression: value_expression for item in iterable}
+
+
+#Simple dictionary comprehension for number squares
+dict_comp={ x:x**2 for x in range(1,11)}
+print(dict_comp)
+print()
+# Dictionary Comprehension to combine two lists
+names=["Abbas","Mahad","Hamza"]
+ages=[30,24,34]
+
+name_age_dict= {x:y for x,y in zip(names,ages)}
+print(name_age_dict)
+print()
+#Conditions in Dictionary Comprehension
+
+even_squares={x:x**2 for x in range(1,11) if x % 2 == 0}
+print(even_squares)
+print()
+#Multiple conditions in Dictionary Comprehension
+card_rarity={"pikachu":99,"charizard":87,"squirtle":66,"onyx":54}
+filtered_cards={pokemon:rarity for pokemon,rarity in card_rarity.items() if rarity>80 if rarity<95}
+print(filtered_cards)
+print()
+# Perform operations on Values
+fruit_prices={"apple": 100 ,"banana": 200 ,"orange": 300 }
+discounted_prices={fruit:price*0.85 for fruit,price in fruit_prices.items()}
+print(discounted_prices)
+print()
+
