@@ -26,7 +26,7 @@ Var5="5"
 Var6="25"
 
 print(Var5 + Var6)                  #This will give 525 as output(adding strings)
-print(int(Var5) + int(Var6))        #This will give 30 as output because string is converted to integer
+print(int(Var5) + int(Var6))        #This will give 30 as output because string is typecast into integer
 
 
 print(5*"Hello\n")                  #Prints Hello 5 times on different lines

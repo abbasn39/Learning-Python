@@ -33,7 +33,7 @@ print("Print 9")
 print(Str1[0:5:2])                        # This skips one index. prints every 2nd index
 
 print("Print 10")
-print(Str1[0:14:3])                       #Prints index 0 and then every third index till index 14
+print(Str1[0:14:3])                       #Prints index 0 and then every third index till index 14(excluding Index 14)
 
 print("Print 11")
 print(Str1[0:14:4])                       #Prints index 0 and then every fourth index
@@ -42,7 +42,7 @@ print("Print 12")
 print(Str1[:])                            #Prints everything
 
 print("Print 13")
-print(Str1[::2])                          #Prints every second index including the index 0
+print(Str1[::2])                          #Prints every 2nd index including the index 0
 
 print("Print 14")
 print(Str1[-14:len(Str1)])                #Prints the whole string but we use len(Str1) as the upper limit in the range
@@ -81,8 +81,7 @@ print(Str1.endswith("Abbas"))           #False
 
 print(Str1.count("a"))                  #Counts the numbers of "a" (Notice it does not count uppercase "A")
 
-print(Str1.capitalize())                                    #Capatalizes the first index
-print(Str1.lower())                                         #Turns first index to lower case
+print(Str1.capitalize())                                    #Capatalizes the first index(index 0)
 print(Str1.swapcase())                                      # Swaps upper with lower case and vice versa
 print(Str1.find("boy"))                                     # Returns the index numbers where mentioned string starts
 print(Str1.lower())                                         # Converts whole string to lower case
