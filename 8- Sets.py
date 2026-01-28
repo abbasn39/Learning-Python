@@ -1,6 +1,7 @@
 print("Section 1\n")
 s=set()                         # If we do not write 'set' after = then s will be an empty tuple
 print(type(s))
+print()
 
 s1={1,2,3,4,5,6,7,8,9,10}       # Initializing set by itself
 print(s1,"  ",type(s1))

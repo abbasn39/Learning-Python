@@ -3,7 +3,7 @@ Dict1={"Rabia":"Sohaib","Abbas":"Cue sad music","Minahil":"Bilal"} # Notice the 
                                                                    # which indicates that this is a Dictionary
     # In Dict1 'Rabia','Abbas','Minahil' are the Keys
     # In Dict1 'Sohaib','Cue sad music','Bilal' are the values
-print(Dict1)
+print(Dict1)                                           # Prints the whole dict with key value pairs
 
     #If you want to fetch a Value from a Key you can use the following
 print(Dict1["Rabia"])               # This will print 'Sohaib'
@@ -11,7 +11,7 @@ print(Dict1["Abbas"])               # This will print 'Cue sad Music'
 print(Dict1["Minahil"])             # This will print 'Bilal'
 
 
-print("Section 2\n")
+print("\nSection 2\n")
 
 Siblings={"Tahir":{"Sumiyah","Waleed","Sufiyan","Khadija"},
           "Sahira":{"Ammar","Hamza","Zainab"},
@@ -21,6 +21,10 @@ Siblings={"Tahir":{"Sumiyah","Waleed","Sufiyan","Khadija"},
        "Talat":{"Eman","Fatima","Bazil"},
           "Sumaira":{"Rafay","Meerub","Musa"},
           "Farwa":{"Aleezay","Anaya"}}
+# In Siblings dictionary the siblings are the keys and their children are stored as respective sets. See when
+# values(children) are printed from a key(sibling) they're printed in random order despite being written in descending
+# order according to the age of the children. This is because the values are stored as sets which can randomize order
+# when printed.
 
 print(Siblings["Uzma"])
 print(Siblings["Humaira"])
@@ -64,7 +68,8 @@ print("\nSection 5")
 Dict7={"Samsung":"picture quality","LG":"Long Warranty","Sony":"Best Sound"}
 print(Dict7["Samsung"])     #This will print Value for Samsung only if the key 'Samsung' exists
 #print(Dict7["Haier"])      #This will give an error as the key 'Haier' does not exist
-print(Dict7.get("Samsung")) #Will check if key 'samsung' exists, if yes only then it will return its Value 'picture quality'
+print(Dict7.get("Samsung")) #Will check if key 'samsung' exists, if yes only then it will return
+                            # its Value which is 'picture quality'
 print(Dict7.get("Haier"))   #Will check if key 'Haier' exists, if yes only then it will return its Value.
                             # if the key 'Haier' does not exist it will give 'None' instead of error
 
@@ -99,15 +104,18 @@ print("\nSection 7")
 
 #Simple dictionary comprehension for number squares
 dict_comp={ x:x**2 for x in range(1,11)}
+#range function defines a range excluding the end value
 print(dict_comp)
 print()
 # Dictionary Comprehension to combine two lists
 names=["Abbas","Mahad","Hamza"]
-ages=[30,24,34]
+ages= [30,24,34]
 
 name_age_dict= {x:y for x,y in zip(names,ages)}
+# zip function is used to combine key value pairs from different lists
 print(name_age_dict)
 print()
+
 #Conditions in Dictionary Comprehension
 
 even_squares={x:x**2 for x in range(1,11) if x % 2 == 0}
@@ -118,6 +126,7 @@ card_rarity={"pikachu":99,"charizard":87,"squirtle":66,"onyx":54}
 filtered_cards={pokemon:rarity for pokemon,rarity in card_rarity.items() if rarity>80 if rarity<95}
 print(filtered_cards)
 print()
+#syntax---> newdict = {object:object for object in iterable CONDITION}
 # Perform operations on Values
 fruit_prices={"apple": 100 ,"banana": 200 ,"orange": 300 }
 discounted_prices={fruit:price*0.85 for fruit,price in fruit_prices.items()}
