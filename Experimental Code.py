@@ -1,2 +1,4 @@
-Dict999={2:3,3.124:4}
-print(Dict999)
+Setx={1,2,3}
+
+if 2 in Setx:
+    print(Setx)

@@ -3,20 +3,20 @@ s=set()                         # If we do not write 'set' after = then s will b
 print(type(s))
 print()
 
-s1={1,2,3,4,5,6,7,8,9,10}       # Initializing set by itself
+s1={1,2,3,4,5,6,7,8,9,10}       # Initializing set by itself, notice the curly brackets, absence of key value pairs
 print(s1,"  ",type(s1))
 
 L=["a","b","c","d","e"]
-s2=set(L)                       # Initializing a set through List
+s2=set(L)                       # Initializing a set through List, typecasting
 print(s2,"  ",type(s2))
 
 T=(1,2,3,4,5)
-s3=set(T)                       # Initializing a set through Tuple
+s3=set(T)                       # Initializing a set through Tuple, typecasting
 print(s3,"  ",type(s3))
 
 print("\nSection 2\n")
 List1=[1,2,3,4]
-Set1=set(List1)                 #Converting a list in  the set
+Set1=set(List1)                 #Converting a list in a set, typecasting
 
 print(Set1)
 print(type(Set1))
@@ -26,18 +26,18 @@ print("\nSection 3\n")
 Tuple1=("a","b","c","d")
 Set2=set(Tuple1)                #This can convert a tuple in it but at random indexing
 
-print(Set2)
+print("Set3=",Set2)
 print(type(Set2))
 
 print("\nSection 4\n")
 Set3=set()                      #Empty Set
 Set3.add(1)
 Set3.add(2)
-print(Set3)
+print("Set3=",Set3)
 Set3.add(3)
-print(Set3)                     #Total values in Set3 are {1,2,3}
-Set4=Set3.union({3,4,5})        #Total values in Set4 are {1,2,3,4,5} no repeat value in sets
-print(Set4)
+print("Set3=",Set3)                     #Total values in Set3 are {1,2,3}
+Set4=Set3.union({3,4,5})        #Total values in Set4 are {1,2,3,4,5} no repeat value in sets, notice 3 is repeated
+print("Set4=",Set4)
 
     # DIFFERENCE BETWEEN SETS AND DICTIONARY CREATION
     # x={a,b,c}               Values only in curly brackets create a set (no colons)
@@ -49,9 +49,9 @@ print("\nSection 5\n")
 Set5={11,22,55}
 Set6={33,44,55}
 Set7=Set5.union(Set6)           # Notice no repeat values
-print(Set7)
+print("Set7=",Set7)
 Set8=Set5.intersection(Set6)    #You need to define a separate set for functions like union and intersection
-print(Set8)
+print("Set8=",Set8)
 
 print("\nSection 6")
 print("Sets FUNCTIONS\n")
@@ -92,19 +92,20 @@ print(a.symmetric_difference(b))    # {1, 2, 4, 5}                (a U b) - (a â
 print("\nSection 8")
 
 print("Membership tests\n")
-print(2 in a)               #Prints True if 2 is in set 'a' otherwise false
-print(4 in a)               #Prints True if 4 is in set 'a' otherwise false
+# a = {1,2,3}
+print(2 in a)               #Prints True if 2 is in set 'a' otherwise false (True)
+print(4 in a)               #Prints True if 4 is in set 'a' otherwise false (False)
 
 d = {1, 2, 7}
 e = {1, 2, 3, 7}
 
 
 print("Subset and Superset tests")
-print(d <= e)               # True (d is subset of e)
-print(e >= d)               # True (e is superset of d)
+print(d <= e)               # True (d is subset of e) All elements of d are present in e
+print(e >= d)               # True (e is superset of d) All elements of d are present in e
 print(e <= d)               # False (e is not a subset of d)
-print(d.issubset(e))        # True
-print(e.issuperset(d))      # True
+print(d.issubset(e))        # True---> Read as "is set 'd' the subset of set 'e'"
+print(e.issuperset(d))      # True---> Read as "is set 'e' the superset of set 'd'"
     # Subset: If all elements of A are in B then A is subset of B
     # Superset: If all elements of B are in A then A is the superset of B
 
