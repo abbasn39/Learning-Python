@@ -5,15 +5,16 @@ for item in List1:              #Print once for every item in List1
     print(item)
 
 print("\nSection 2\n")
-List2= [["Abbas","born second"],["Minahil","born Third"],["Rabia","born First"]]
+List2= [["Abbas","second"],["Minahil","Third"],["Rabia","First"]]
                 #The above is lists within a list
 
-for Kid,born in List2:
-    print(Kid,"is",born)
+for Kid,order in List2:
+    print(Kid,"was born",order)
 
 #Refer to for loop and print line:
 #Here Abbas, Rabia, Minahil is treated as 'Kid'
-#Born first, Born second and born third is treated as 'born'
+#first, second and third are treated as 'order'
+print()
 
 Tuple1=(1,2,3,4,5)
 for item in Tuple1:
@@ -27,8 +28,8 @@ for item in List3:
 print("\nSection 4\n")
 
 List4=[["Mahad",2000],["Aden",2004],["Jannat",2010]]
-for Person,YOB in List4:                # Names are automatically assigned to Person
-    print(Person,YOB)                   # Years are automatically assigned to YOB
+for Person,YOB in List4:                # Order automatically assigns Names to Person
+    print(Person,YOB)                   # Order automatically assigns years to YOB
 
 print("\nSection 5\n")
 
@@ -37,7 +38,7 @@ for item,x in Dict1.items():            #Dict1.items() returns key-value pairs a
     print(item,x)
 
 """Dict1={"A":"1","B":"2","C":"3"}      #Dict1 by itself (without .items()) iterates over the keys only: "A", "B", "C".
-for item,x in Dict1.items():            #Trying to unpack a single string (like "A") into two variables (item, x) 
+for item,x in Dict1:                    #Trying to unpack a single string (like "A") into two variables (item, x) 
     print(item,x)                       #causes an error because there aren’t two values to unpack.
 """
 print("\nSection 6\n")
@@ -45,22 +46,22 @@ print("\nSection 6\n")
 List5=[["Abbas",80],["Rabia",90],["Mahad",33],["Ahmad",10],["John",7]]
 for Name,Marks in List5:
     if Marks > 33:
-        print(Name,"has passed the exam")
+        print(Name,"has passed the exam with",Marks,"Marks")
     elif Marks==33:
-        print(Name,"has massan massan passed the exam")
+        print(Name,"has massan massan passed the exam",Marks,"Marks")
     else:
-        print(Name,"has failed the exam")
+        print(Name,"has failed the exam",Marks,"Marks")
 
 print("\nSection 7\n")
 
 list1=[[1,2],[3,4],[5,6]]
 
-for x in list1[0:3]:        # Range of list defined in [], index 0 till 2 inclusive
+for x in list1[0:3]:        # Range of list defined in [], index 0 till index 2 inclusive
     for a in x:
         break
     print(a)
-print("\n")
-for x in list1[0:2]:        # Range of list defined in [], index 0 till 1 inclusive
+print()
+for x in list1[0:2]:        # Range of list defined in [], index 0 till index 1 inclusive
     for b in x:
         break
     print(b)
