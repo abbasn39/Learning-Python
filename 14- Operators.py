@@ -17,16 +17,16 @@ print((A+B),"\t\tAddition")
 print((A-B),"\t\tSubtraction")
 print((A*B),"\t\tMultiplication")
 print((A/B),"\tFloat Division")         #Gives answer in decimal places
-print((A//B),"\t\tFloor Division")      #Gives answer in whole integers
-print((A%B),"\t\tModulus")              #Gives remainder after division
+print((A//B),"\t\tFloor Division")      #Gives answer in whole integers(no decimal places)
+print((A%B),"\t\tModulus")              #Gives the remainder after division
 print((A**B),"\t\tExponent")            #A to the power B here its 3^2
 
-# In modulus % most common statements are used are like if XYZ % 2== 0 which means that if XYZ is divided by 2 and the
-# remainder is zero it means that XYZ is a even number. Modulus can be used to check 'multiple of' statements.
+# In modulus '%' most common statements are used are like if XYZ % 2== 0 which means that if XYZ is divided by 2 and the
+# remainder is zero, it means that XYZ is an even number. Modulus can be used to check 'multiple of' statements.
 
 
 
-print("2-Assignment Operators\n")
+print("\n2-Assignment Operators\n")
 
 #        OPERATOR	            EXAMPLE	                        SAME AS
 #        =	                    x = 5	                        Assigns 5 to x
@@ -43,7 +43,7 @@ print(x)
 x +=2
 print(x)            #Automatically updates the value of x. Useful in incremental progression of code.
 
-print("3-Comparison Operators\n")
+print("\n3-Comparison Operators")
 
 #       Operator	    Meaning	                    Example	            Result
 #       ==	            Equal to	                5 == 5	            True
@@ -53,7 +53,7 @@ print("3-Comparison Operators\n")
 #       >=	            Greater than or equal	    5 >= 5	            True
 #       <=	            Less than or equal	        5 <= 3	            False
 
-print("See Comments")
+print("See Comments\n")
 
 print("4-Logical Operators\n")
 
