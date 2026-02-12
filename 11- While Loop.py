@@ -1,8 +1,8 @@
 i = 1
 
-while i <= 5:               #While loop will keep running until condition given is satisfied.
+while i <= 5:               #While loop will keep running until the condition given is satisfied.
     print(i)
-    i = i + 1               # This keeps adding 1 to 'i' and storing it in 'i' each time the while loop runs.
+    i += 1               # This keeps adding 1 to 'i' and storing it in 'i' each time the while loop runs.
 
 
 while True:                 # Condition for infinite loop 'True'
@@ -10,6 +10,7 @@ while True:                 # Condition for infinite loop 'True'
     if num==25:
         break               # Can use 'break' to exit the loop early
     else:
+        print("try again")
         continue            # 'continue' keeps the loop running.
 
 

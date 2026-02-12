@@ -1,5 +1,5 @@
 #This is a program for a vending machine that has 3 products: Candies, Chocolates and Crisps. It asks for the product
-# customer wants and then the quantity of product needed. If the quantity demanded exceeds the available quantity then
+# customer wants and then the quantity of product needed. If the quantity demanded exceeds the available quantity, then
 # the program returns 'out of stock' after giving the quantity that was available.
 # NOTE: This is not for multiple transactions as the available stock does not update, it's not a recurring program.
 
