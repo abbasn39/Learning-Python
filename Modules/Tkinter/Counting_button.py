@@ -9,13 +9,16 @@ def counter():
 
 def reset():
     global count
-    count=0
+    count=0                         # Sets the counter to zero
     print(count)
     label.config(text=count)
 
 def count_back():
     global count
-    count -=1
+    count -=1                       # Subtracts 1 from the current count
+    if count<0:                     # Condition to set counter to zero if counter goes less than 0
+        count=0
+        label.config(text=count)
     print(count)
     label.config(text=count)
 
@@ -34,12 +37,14 @@ label=Label(window_button,text=count,                           # Initializing a
             font=('Monospace',50,"bold"))
 label.pack()
 
-reset_button=Button(window_button, text="reset counter",font=('Arial',10,"bold"))
-reset_button.config(command=reset)
+reset_button=Button(window_button, text="reset counter")        # Initialize a button saying "reset counter"
+reset_button.config(font=('Arial',10,"bold"))
+reset_button.config(command=reset)                              # Assigns "reset" call back to this button command
 reset_button.pack(side="right")
 
-count_back_button = Button(window_button, text="count back",font=('Arial',10,"bold"))
-count_back_button.config(command=count_back)
+count_back_button = Button(window_button, text="count back")    # Initialize a button saying "count back"
+count_back_button.config(font=('Arial',10,"bold"))
+count_back_button.config(command=count_back)                    # Assigns "count_back" call back to this button command
 count_back_button.pack(side="left")
 
 window_button.mainloop()
