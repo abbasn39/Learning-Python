@@ -1,13 +1,16 @@
 from tkinter import *
-#Picture_adjustments
 import sys
 import os
+
+#region Picture adjustments
 
 def resource_path(filename):
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, filename)
     return filename
-#Functions
+#endregion
+
+#region Functions
 
 def submit():
 
@@ -35,41 +38,36 @@ def submit():
         label5.pack()
         label3.pack_forget()
         label4.pack_forget()
-#Functions
+#endregion
 
 
-#Window
+#region Window
 window=Tk()
 
 window.title("For my Nigga")
 
-
-
-#Frame_open
+#region Frame
 Frame=Frame(window)
 Frame.pack()
-#Frame_close
+#endregion
 
-#Label1_open
+#region Label1
 label1=Label(Frame,text="What date of february were you born on(1-29)")
 label1.config(font=("Calibri",15))
 label1.pack(side="left")
-#Label1_close
+#endregion
 
 
-
-
-
-#Submit_open
+#region Submit
 submit=Button(Frame,text="Submit",command=submit)
 
 submit.config(font=("calibri",15))
 
 submit.pack(side="right")
-#Submit_close
+#endregion
 
 
-#Entry_open
+#region Entry
 enter=Entry(Frame)
 
 
@@ -78,33 +76,33 @@ enter.config(bg="white")
 enter.config(fg="black")
 
 enter.pack(ipadx=10)
-#Entry_close
+#endregion
 
 
-#Label2_open
+#region Label2
 label2=Label(window,text=enter.get())
 label2.config(font=("Calibri",15))
 label2.config(pady=20)
 label2.pack(side="bottom")
-#Label2_close
+#endregion
 
-#Label3_open
+#region Label3
 hbd=PhotoImage(file=resource_path("hbday.png"))
 label3=Label(window,image=hbd)
 label3.config(compound="bottom")
-#Label3_close
+#endregion
 
 
-#Label4_open
+#region Label4
 confused=PhotoImage(file=resource_path("confused.png"))
 label4=Label(window,image=confused)
 label4.config(compound="bottom")
-#Label4_close
+#endregion
 
-#Label5_open
+#region Label5
 spongebob=PhotoImage(file=resource_path("spongebob.png"))
 label5=Label(window,image=spongebob)
 label5.config(compound="bottom")
-#Label5_close
+#endregion
 window.mainloop()
-#Window
+#endregion
